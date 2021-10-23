@@ -1,0 +1,89 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width", initial-scale=1.0>
+   <title>Pizza Ordering</title>
+</head>    
+<body>
+    <form action="http://blackgoosebistro.com/pizza.php" method="post">
+    <h1 style="font-size: 22px;">Black Goose Bistro Pizza on Demand</h1>
+    <p> Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we"ll deliver it within an hour </p>
+    <fieldset>
+      <legend>Your information</legend>   
+
+      <div>
+        <label for="input-name">Name:</label>
+        <input id="input-name" type="text" name="customername">
+      </div>  
+      
+      <div>
+        <label for="input-address">Address:</label>
+        <input id="input-address" type="name" name="address">
+      </div>
+
+      <div>
+        <label for="input-telephone-number">Telephone Number:</label>
+        <input id="input-telephone-number" type="name" name="telephone">
+      </div>
+
+      <div>
+        <label for="input-email">Email:</label>
+        <input id="input-email" type="text" name="email">
+
+      </div>
+          <label for="input-delivery-instruction"></label>
+          <br>
+          <textarea id="input-delivery-instruction" name="instructions" cols="30" rows="10" maxlength="200" ></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+     <legend><b>Design your Dream Pizza:</b></legend>
+     <p>Pizza Specs</p>
+
+    <fieldset>
+       <legend>Crust (Choose One):</legend>
+
+       <div>
+         <input id="Classic White" type="radio" name="crust" value="Classic White"
+         <label for="Clasic-White">Classic White</label>
+       </div>
+       <div>
+         <input id="Multigrain" type="radio" name="crust" value="Multigrain"
+         <label for ="Multigrain">Multigrain </label>
+       </div>
+       <div>
+         <input id="Cheese-stuffed-crust" type="radio" name="crust" value="Cheese-stuffed-crust
+         <label for="Cheese-stuffed-crust">Cheese-stuffed-crust</label>  
+       </div>
+       <div>
+         <input id="Gluten-Free" type="radio" name="crust" value="Gluten-Free"
+         <label  for="Gluten-Free">Gluten Free</label>
+       </div>
+     </fieldset>
+     
+     <fieldset>
+         <legend> Toppings (Choose as many as you want):</legend>
+
+         <div>
+             <input id="red-sauce" type="checkbox" name="toppings[]" value="Red Sauce" checked>
+             <label for="red-sauce">Red Sauce</label>
+         </div>
+         <div><form>
+          <input type="checkbox" id="Nugget" name="Nugget" value="Nugget">
+          <label for="Sausage">Sausage</label><br>
+          <input type="checkbox" id="Sausage" name="Sausage" value="Mayonaise">
+          <label for="Chips">Chips</label><br>
+          <input type="checkbox" id="Chips" name="Chips" value="Random Chips">
+          <label for="Spagetti">Spagetti</label><br>
+          <input type="checkbox" id="Spagetti" name="Spagetti" value="Extra Spagetti">
+          <label for="Chicken Strips">Chicken Strips</label><br>
+      </form>
+      <br/>
+      <label >How Many Pizza:<input type="number" name="pizza" min="1" max="6"></label>
+      <br/>
+      <p><input type="submit" value="Order Now"> <input type="reset"></p>
+    </body>
+</html>

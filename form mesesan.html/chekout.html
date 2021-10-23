@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <body>
+    <div id="main">
+        <h1 align="center"> Selamat Datang DI Web Site Belaja Online Kami</h1><hr>
+        <p align="Center">Lihat keranjang <a href="#" onliclick="file:///C:/xampp/tomcat/temp/cv%20dimas%20anggoro/form%20mesesan.html/formmemesan.html" target="_blank"> keranjang<img src="keranjang.jpg" height="50px" with="45px"></img></a></p>
+        <table id="items" align="center" border="1" bgcolor="c0c0c0">
+            <tr>
+                <td>Baju</td>
+                <td>bahan cottun</td>
+                <td>$Rp75.000</td>
+                <td><input type="image" src="baju.png" name="cart" height="105px" with="100px" onclick="addtocart()"></td>
+            </tr>
+            <tr>
+                <td>Celana</td>
+                <td>bahan woll dan kuat</td>
+                <td>$Rp90.000</td>
+                <td><input type="image" src="celana.png" name="cart" height="105px" with="100px" onclick="addtocart()"></td>
+            </tr>
+            <tr>
+                <td>Sepatu</td>
+                <td>brand lokal</td>
+                <td>$Rp50.000</td>
+                <td><input type="image" src="sepatu.png" name="cart" height="105px" with="100px" onclick="addtocart()"></td>
+            </tr>
+            <tr>
+                <td>Jaket</td>
+                <td>Black pekat:</td>
+                <td>$Rp75.000</td>
+                <td><input type="image" src="jaket.jpg" name="cart" height="105px" with="100px" onclick="addtocart()"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="cart" style="display:none">
+    <h1 align="center">Online Shoping Cart</h1>
+    <table id="tablecart" align="center" border="1" bgcolor="c0c0c0">
+        <tr>
+            <td>Total</td>
+            <td id="total"></td>
+        </tr>
+    </table>
+        <p aligh="center"><a href="#" onliclick="file:///C:/xampp/tomcat/temp/cv%20dimas%20anggoro/form%20mesesan.html/formmemesan.html" target="_blank"> Return</a></p>
+    </div>
+    <h2 align="center"># Order Product</h2>
+    <table id="items" align="center" border="0" bgcolor="c0c0c0">
+    <tr><td>Nama </td><td><input type="text" name="nama_pemesan" placeholder="Nama Lengkap Pembeli"></td></tr>
+    <tr>
+        <td>Ukuran Baju </td>
+        <td>
+            <input type="radio" name="baju" value="l"/>Baju Bombar Ukuran L<br/>
+            <input type="radio" name="baju" value="xl"/>Baju Bombar Ukuran XL<br/>
+            <input type="radio" name="baju" value="xxl"/>Baju Bombar Ukuran XXL<br/>
+        </td>
+    </tr>
+    <tr>
+        <td>Jumlah Barang</td>
+        <td>
+        <input type="number" value="Order Lebih">
+        </td>
+    </tr>
+    <tr>
+        <td>Ukuran Celana </td>
+        <td>
+            <input type="radio" name="baju" value="l"/>celana Ukuran L<br/>
+            <input type="radio" name="baju" value="xl"/>celana Ukuran XL<br/>
+            <input type="radio" name="baju" value="xxl"/>celana Ukuran XXL<br/>
+        </td>
+    </tr>
+    <tr>
+        <td>Jumlah Barang</td>
+        <td>
+        <input type="number" value="Order Lebih">
+        </td>
+    </tr>
+    <tr>
+        <td>Ukuran Sepatu </td>
+        <td>
+            <input type="radio" name="baju" value="l"/>39<br/>
+            <input type="radio" name="baju" value="xl"/>40<br/>
+            <input type="radio" name="baju" value="xxl"/>42<br/>
+        </td>
+    </tr>
+    <tr>
+        <td>Jumlah Barang</td>
+        <td>
+        <input type="number" value="Order Lebih">
+        </td>
+    </tr>
+    <tr>
+        <td>Ukuran Jaket</td>
+        <td>
+            <input type="radio" name="baju" value="l"/>Jaket Ukuran L<br/>
+            <input type="radio" name="baju" value="xl"/>Jaket Ukuran XL<br/>
+            <input type="radio" name="baju" value="xxl"/>Jaket Ukuran XXL<br/>
+        </td>
+    </tr>
+    <tr>
+        <td>Jumlah Barang</td>
+        <td>
+        <input type="number" value="Order Lebih">
+        </td>
+    </tr>
+    <tr>
+        <td>Alamat Penerima</td><td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td><a href="file:///C:/xampp/tomcat/temp/cv%20dimas%20anggoro/form%20mesesan.html/chekout.htm"><input type="submit" value="Checkout"></a></td></tr>
+    </tr>
+    </table>
+    </body>
+</html>
